@@ -14,6 +14,9 @@
     suggested_fee_recipient: "0xa10214731A6D9eC03d36d1437796D1cEe6a061f7"
 
     enable_firewall: false
+    host_ip_address_to_bind_to: 0.0.0.0
+    expose_execution_client_authrpc_port_to_host: true
+    expose_consensus_client_http_port_to_host: true
 
   roles:
     - role: geerlingguy.docker
