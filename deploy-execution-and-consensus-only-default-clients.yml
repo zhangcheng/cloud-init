@@ -21,6 +21,8 @@
     expose_execution_client_json_rpc_websocket_port_to_host: true
     expose_consensus_client_http_port_to_host: true
 
+    geth_http_api: web3,eth,net,txpool
+
   roles:
     - role: geerlingguy.docker
       vars:
