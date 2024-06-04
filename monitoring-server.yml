@@ -1,0 +1,23 @@
+---
+- name: Deploy monitoring server
+  hosts: 127.0.0.1
+  connection: local
+  become: true
+
+
+  vars:
+    jwt_secret_string: "7a813d06b0a08de1f1e70ebbc6b3ec8dc589f62d04d346b4754c9d739b4c648b"
+    suggested_fee_recipient: "0xa10214731A6D9eC03d36d1437796D1cEe6a061f7"
+
+    enable_firewall: false
+    monitoring_server: true
+    install_monitoring_agents: false
+    host_ip_address_to_bind_to: 0.0.0.0
+
+  roles:
+    - role: geerlingguy.docker
+      vars:
+        docker_package_state: present
+        docker_install_compose_plugin: true
+        
+    - role: slingnode.ethereum_observability
