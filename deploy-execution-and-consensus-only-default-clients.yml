@@ -30,6 +30,8 @@
     monitoring_server_host: "10.10.194.255"
     single_server_deployment: false
 
+    ethereum_metrics_exporter_docker_image: ethpandaops/ethereum-metrics-exporter:0.23.0
+
   roles:
     - role: geerlingguy.docker
       vars:
