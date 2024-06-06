@@ -10,9 +10,9 @@
     suggested_fee_recipient: "0xa10214731A6D9eC03d36d1437796D1cEe6a061f7"
 
     enable_firewall: false
-    monitoring_server: true
-    install_monitoring_agents: false
-    host_ip_address_to_bind_to: 0.0.0.0
+    # monitoring_server: true
+    # install_monitoring_agents: false
+    # host_ip_address_to_bind_to: 0.0.0.0
 
   roles:
     - role: geerlingguy.docker
